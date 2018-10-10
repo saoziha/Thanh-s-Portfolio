@@ -11,44 +11,6 @@ font-weight:700;
 font-family:Montserrat;
 }
 
-hr.star-dark,hr.star-light {
-max-width:15rem;
-text-align:center;
-border:none;
-border-top:solid .25rem;
-margin:2.5rem auto;
-padding:0;
-}
-
-hr.star-dark:after,hr.star-light:after {
-position:relative;
-top:-.8em;
-display:inline-block;
-content:'\f005';
-font-family:"Font Awesome 5 Free";
-font-weight:900;
-font-size:2em;
-padding:0 .25em;
-}
-
-hr.star-light {
-border-color:#fff;
-}
-
-hr.star-light:after {
-color:#fff;
-background-color:#18bc9c;
-}
-
-hr.star-dark {
-border-color:#2c3e50;
-}
-
-hr.star-dark:after {
-color:#2c3e50;
-background-color:#fff;
-}
-
 section {
 padding:6rem 0;
 }
@@ -99,21 +61,6 @@ font-size:80%;
 padding:.8rem;
 }
 
-header.masthead {
-padding-top:calc(6rem+72px);
-padding-bottom:6rem;
-}
-
-header.masthead h1 {
-font-size:3rem;
-line-height:3rem;
-}
-
-header.masthead h2 {
-font-size:1.3rem;
-font-family:Lato;
-}
-
 .portfolio {
 margin-bottom:-15px;
 }
@@ -129,7 +76,7 @@ margin-bottom:15px;
 -webkit-transition:all ease .5s;
 transition:all ease .5s;
 opacity:0;
-background-color:rgba(24,188,156,.9);
+background-color:rgba(57,111,198,0.8);
 }
 
 .portfolio .portfolio-item .portfolio-item-caption:hover {
@@ -218,18 +165,13 @@ background-color:#2c3e50;
 color:#fff;
 }
 
-.copyright {
-background-color:#1a252f;
-}
-
-
 
 .btn {
 border-width:2px;
 }
 
 .bg-primary {
-background-color:#18bc9c!important;
+background-color:#396fc6!important;
 }
 
 .bg-secondary {
@@ -241,17 +183,17 @@ color:#18bc9c!important;
 }
 
 .text-secondary {
-color:#18BC9C!important;
+color:#396fc6!important;
 }
 
 .btn-primary {
-background-color:#18bc9c;
-border-color:#18bc9c;
+background-color:#396fc6;
+border-color:#396fc6;
 }
 
 .btn-primary:active,.btn-primary:focus,.btn-primary:hover {
-background-color:#128f76;
-border-color:#128f76;
+background-color:#00049D;
+border-color:#00049D;
 }
 
 .btn-secondary {
@@ -269,7 +211,7 @@ color:#fff;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover,#mainNav .navbar-nav li.nav-item a.nav-link.active,.floating-label-form-group-with-focus label,a {
-color:#18bc9c;
+color:#396fc6;
 }
 
 @media min-width992px{
@@ -279,31 +221,42 @@ line-height:2.5rem;
   }
 
 }
-.avatar{
-  padding-bottom: 5rem;
+.info{
+  text-align: center!important;
+  background-image: url("../img/background.jpg");
+  color: #fff;
+  padding-bottom: 6rem;
+}
+.info .container .row{
   padding-top: 7rem;
 }
-.masthead h1{
-  padding-bottom: 5rem;
+.avatar{
+  padding-bottom: 3rem;
+  width: 11rem;
 }
-.portfolio-label{
-    padding-bottom: 5rem;
+
+.info .container .row .col h2{
+  font-size: 2rem;
+  padding-bottom: 1rem;
 }
+.info .container .row .col h3{
+  padding-bottom: 1rem;
+}
+
 #mainNav {
-padding-top:1.5rem;
-padding-bottom:1.5rem;
 -webkit-transition:padding-top .3s,padding-bottom .3s;
 transition:padding-top .3s,padding-bottom .3s;
 }
 
 #mainNav .navbar-brand {
-font-size:2em;
+font-size: 20px;
 -webkit-transition:font-size .3s;
 transition:font-size .3s;
 }
 
 #mainNav .navbar-nav {
 margin-top:0;
+font-size: 20px !important;
 }
 
 #mainNav.navbar-shrink {
@@ -315,19 +268,6 @@ padding-bottom:.5rem;
 font-size:1.5em;
 }
 
-header.masthead {
-padding-top:calc(6rem+106px);
-padding-bottom:6rem;
-}
-
-header.masthead h1 {
-font-size:4.75em;
-line-height:4rem;
-}
-
-header.masthead h2 {
-font-size:1.75em;
-}
 .line{
   border-top: solid #fff 0.5rem;
   max-width: 46rem;
@@ -335,7 +275,7 @@ font-size:1.75em;
   height: 0;
 }
 .line2{
-  border-top: solid #18bc9c 0.5rem;
+  border-top: solid #396fc6 0.5rem;
   max-width: 46rem;
   margin-bottom: 3rem;
   height: 0;
@@ -346,7 +286,6 @@ font-size:1.75em;
 #mainNav .navbar-nav>li.nav-item>a.nav-link.active,#mainNav .navbar-nav>li.nav-item>a.nav-link.active:active,#mainNav .navbar-nav>li.nav-item>a.nav-link.active:focus,#mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover {
 color:#fff;
 background:#18bc9c;
-}
 }
 
 @media min-width576px{
@@ -369,4 +308,21 @@ padding:5rem;
 .portfolio-modal .portfolio-modal-dialog h2 {
 font-size:3rem;
 }
+}
+#contact{
+  background-color: #fff;
+}
+.input-control{
+  border: none;
+  border-bottom: solid 1px #DCDFE1;
+  border-radius: 0;
+  padding-bottom: 0.5rem;
+  padding-left: 0;
+}
+
+.form-group label{
+  display: none;
+}
+.row{
+  justify-content: center;
 }
